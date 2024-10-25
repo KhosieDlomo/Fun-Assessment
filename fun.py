@@ -11,7 +11,21 @@ def dog_years():
     ```
     """
 
-    #enter your code here
+    #enter your code here   
+    age = int(input("Input a dog's age in huma years: "))
+    human_age = 20
+    if age > human_age:
+        print("Dog's age in human age should not be greater than 20")
+    elif age < 1:
+        print("Please enter age in years not months")
+    
+    if age  >= 1 or age <= 20:
+            dog_age = 2(1 * 10,5)
+            aging = age - dog_age
+            outcome = (4 * aging)
+    print(f"The dog's age in dog years is: {outcome}")
+
+dog_years()
 
 def fizzbuzz(num):
     """

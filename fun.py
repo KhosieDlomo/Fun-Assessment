@@ -6,31 +6,36 @@ def dog_years():
 
     Expected Output:
     ```
-    Input a dog's age in human years: 15
+    input a dog's age in human years: 15
     The dog's age in dog's years is 73
     ```
     """
 
-    #enter your code here   
-    age = int(input("Input a dog's age in huma years: "))
-    human_age = 20
-    if age > human_age:
-        print("Dog's age in human age should not be greater than 20")
-    elif age < 1:
-        print("Please enter age in years not months")
+#     #enter your code here   
+#     human_form_age = int(input("input a dog's age in huma years: "))
+#     human_age = 20
+#     if human_form_age > human_age:
+#         print("Dog's age in human age should not be greater than 20")
+#     elif human_form_age < 1:
+#         print("Please enter age in years not months")
     
-    if age  >= 1 or age <= 20:
-            dog_age = 2(1 * 10,5)
-            aging = age - dog_age
-            outcome = (4 * aging)
-    print(f"The dog's age in dog years is: {outcome}")
+#     if human_form_age == 1:
+#             dog_age = 1 * 10,5
+#             print(dog_age)
+#     elif human_form_age  > 1 or human_form_age <= 20:
+#             dog_age_ = 10.5
+#             dog_2_year_human = 2 * dog_age_
+#             human_year = human_form_age - 2
+#             results = human_year * 4
+#             converting_dod_age = results + dog_2_year_human
+#     print(f"The dog's age in dog years is: {int(converting_dod_age)}")
 
-dog_years()
+# dog_years()
 
 def fizzbuzz(num):
     """
-    Create a program that returns the numbers as a string from 1 to num. 
-    But for multiples of three print “Fizz” instead of the number, 
+    Create a program that returns the numbers as a string from 1 to i. 
+    But for multiples of three print “Fizz” instead of the iber, 
     and for multiples of five print “Buzz”. For numbers which are 
     multiples of both three and five, print “FizzBuzz”.
 
@@ -39,8 +44,18 @@ def fizzbuzz(num):
     """
 
     #enter your code here
-
-    
+    outcome = []
+    for i in range(1, num + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            outcome.append("FizzBuzz")
+        elif i % 3 == 0:
+            outcome.append("Fizz")
+        elif i % 5 == 0:
+            outcome.append("Buzz")
+        else:
+            outcome.append(i)
+    print(outcome)
+fizzbuzz(15) 
 
 def word_lengths(sentence):
     """
@@ -49,7 +64,7 @@ def word_lengths(sentence):
 
     Expected Output:
     ```
-    Input a sentence: "Aunty Yankho is amazing"
+    input a sentence: "Aunty Yankho is amazing"
     Output: {'Aunty': 5, 'Yankho': 6, 'is': 2, 'amazing': 7}
     ```
     """

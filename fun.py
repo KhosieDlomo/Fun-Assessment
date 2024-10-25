@@ -12,25 +12,25 @@ def dog_years():
     """
 
 #     #enter your code here   
-#     human_form_age = int(input("input a dog's age in huma years: "))
-#     human_age = 20
-#     if human_form_age > human_age:
-#         print("Dog's age in human age should not be greater than 20")
-#     elif human_form_age < 1:
-#         print("Please enter age in years not months")
+    human_form_age = int(input("input a dog's age in huma years: "))
+    human_age = 20
+    if human_form_age > human_age:
+        print("Dog's age in human age should not be greater than 20")
+    elif human_form_age < 1:
+        print("Please enter age in years not months")
     
-#     if human_form_age == 1:
-#             dog_age = 1 * 10,5
-#             print(dog_age)
-#     elif human_form_age  > 1 or human_form_age <= 20:
-#             dog_age_ = 10.5
-#             dog_2_year_human = 2 * dog_age_
-#             human_year = human_form_age - 2
-#             results = human_year * 4
-#             converting_dod_age = results + dog_2_year_human
-#     print(f"The dog's age in dog years is: {int(converting_dod_age)}")
+    if human_form_age == 1:
+            dog_age = 1 * 10,5
+            print(dog_age)
+    elif human_form_age  > 1 or human_form_age <= 20:
+            dog_age_ = 10.5
+            dog_2_year_human = 2 * dog_age_
+            human_year = human_form_age - 2
+            results = human_year * 4
+            converting_dod_age = results + dog_2_year_human
+    print(f"The dog's age in dog years is: {int(converting_dod_age)}")
 
-# dog_years()
+dog_years()
 
 def fizzbuzz(num):
     """

@@ -12,23 +12,24 @@ def dog_years():
     """
 
          #enter your code here   
-    human_form_age = int(input("input a dog's age in huma years: "))
+    human_form_age = int(input("input a dog's age in human years: "))
     human_age = 20
+    dog_age = 0
+
     if human_form_age > human_age:
         print("Dog's age in human age should not be greater than 20")
     elif human_form_age < 1:
         print("Please enter age in years not months")
-    
-    if human_form_age == 1:
-            dog_age = 1 * 10,5
-            print(dog_age)
-    elif human_form_age  > 1 or human_form_age <= 20:
-            dog_age_ = 10.5
-            dog_2_year_human = 2 * dog_age_
-            human_year = human_form_age - 2
-            results = human_year * 4
-            converting_dod_age = results + dog_2_year_human
-    print(f"The dog's age in dog years is: {int(converting_dod_age)}")
+    else:
+        if human_form_age == 1:
+            dog_age = 1 * 10.5
+        elif human_form_age  > 1 or human_form_age <= 20:
+                dog_age_ = 10.5
+                dog_2_year_human = 2 * dog_age_
+                human_year = human_form_age - 2
+                results = human_year * 4
+                dog_age = results + dog_2_year_human
+    print(f"The dog's age in dog years is: {int(dog_age)}")
 
 dog_years()
 
@@ -91,3 +92,13 @@ def cube_sum(number):
     """
     
     #enter your code here
+    cubed_num = []
+    for cubed in str(number):
+        num = int(cubed) **3
+        cubed_num.append(num)
+    print(cubed_num)
+    
+    total = sum(cubed_num)
+    print(f"The cubed sum is {total}")
+
+cube_sum(123)

@@ -11,7 +11,7 @@ def dog_years():
     ```
     """
 
-#     #enter your code here   
+         #enter your code here   
     human_form_age = int(input("input a dog's age in huma years: "))
     human_age = 20
     if human_form_age > human_age:
@@ -70,6 +70,15 @@ def word_lengths(sentence):
     """
     
     #enter your code here
+    message = sentence.split()
+    output = {}
+    for word in message:
+        output[word] = len(word)
+    return output
+
+sentence = input('Input a sentence: ')
+Output = word_lengths(sentence)
+print(Output)
 
 def cube_sum(number):
     """
